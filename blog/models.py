@@ -37,6 +37,8 @@ class Post(models.Model):
         max_length=10, choices=options, default='published'
     )
 
+    numero = models.IntegerField(null=True)
+
     objects = models.Manager() # default manager
     postobjects = PostObjects() # custom manager
 

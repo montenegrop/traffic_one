@@ -5,7 +5,10 @@ from .serializer import PostSerializer
 class PostList(generics.ListCreateAPIView):
     queryset = Post.postobjects.all()
     serializer_class = PostSerializer
-    pass
 
 class PostDetail(generics.RetrieveDestroyAPIView):
-    pass
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+
+    # lookup_field = 'numero'
+    
