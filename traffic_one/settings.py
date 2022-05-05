@@ -39,10 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # mias
+    # mias-creadas
     'user',
     'blog',
-    'blog_api'
+    'blog_api',
+    # mias-instaladas
+    'rest_framework',
+
+
 ]
 
 MIDDLEWARE = [
