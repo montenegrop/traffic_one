@@ -7,5 +7,5 @@ class PostList(generics.ListCreateAPIView):
     serializer_class = PostSerializer
     pass
 
-class PostDefail(generics.RetrieveDestroyAPIViewj):
+class PostDetail(generics.RetrieveDestroyAPIView):
     pass
